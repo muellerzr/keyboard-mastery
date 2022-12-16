@@ -16,6 +16,7 @@ key2position = {
     "k": 0,
     "l": 0,
     ";": 0,
+    "'": 1,
     "q": 2,
     "w": 1,
     "e": 1,
@@ -26,6 +27,8 @@ key2position = {
     "i": 1,
     "o": 1,
     "p": 1,
+    "[": 1,
+    "]": 2,
     "z": 1,
     "x": 1,
     "c": 1,
@@ -35,6 +38,7 @@ key2position = {
     "m": 1,
     ",": 1,
     ".": 1,
+    "/": 1
 }
 key_times = []
 
@@ -49,7 +53,7 @@ def get_key_times():
         value = getch.getch()
         if value == "\n":
             break
-    for _ in range(5):
+    for _ in range(10):
         iteration = {}
         # Shuffle the key2position dictionary
         keys = list(key2position.keys())
